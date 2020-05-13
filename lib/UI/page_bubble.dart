@@ -16,20 +16,20 @@ class PageBubble extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 43.0,
-      height: 53.0,
+      width: 33.0,
+      height: 65.0,
       child: Center(
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Container(
             width: lerpDouble(
-                18.0,
-                33.0,
+                10.0,
+                35.0,
                 viewModel
                     .activePercent), //This method return in between values according to active percent.
             height: lerpDouble(
-                  18.0, 
-                  33.0, 
+                  10.0, 
+                  35.0, 
                   viewModel.activePercent),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
